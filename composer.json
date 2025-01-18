@@ -1,0 +1,47 @@
+{
+  "name": "alex-jones/craft-inline-editor",
+  "description": "Provides controls to quickly edit entries in the admin interface.",
+  "type": "craft-plugin",
+  "license": "proprietary",
+  "support": {
+    "email": "alex@alexjones.us",
+    "issues": "https://github.com/alexj/inline-editor/issues?state=open",
+    "source": "https://github.com/alexj/inline-editor",
+    "docs": "https://github.com/alexj/inline-editor",
+    "rss": "https://github.com/alexj/inline-editor/releases.atom"
+  },
+  "require": {
+    "php": ">=8.2",
+    "craftcms/cms": "^5.5.0"
+  },
+  "require-dev": {
+    "craftcms/ecs": "dev-main",
+    "craftcms/phpstan": "dev-main"
+  },
+  "autoload": {
+    "psr-4": {
+      "alexjones\\craftinlineeditor\\": "src/"
+    }
+  },
+  "extra": {
+    "handle": "inline-editor",
+    "name": "Inline Editor",
+    "developer": "Alex Jones",
+    "documentationUrl": "https://github.com/alexj/inline-editor"
+  },
+  "scripts": {
+    "check-cs": "ecs check --ansi",
+    "fix-cs": "ecs check --ansi --fix",
+    "phpstan": "phpstan --memory-limit=1G"
+  },
+  "config": {
+    "sort-packages": true,
+    "platform": {
+      "php": "8.2"
+    },
+    "allow-plugins": {
+      "yiisoft/yii2-composer": true,
+      "craftcms/plugin-installer": true
+    }
+  }
+}
